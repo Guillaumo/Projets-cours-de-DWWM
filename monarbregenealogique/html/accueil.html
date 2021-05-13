@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="généalogie, ancêtre, filiation, archives, arbre genealogique, archives en ligne"/>
+  <title>Accueil | Mon arbre généalogique</title>
+  <link rel="stylesheet" href="./../css/bootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./../css/style-plus.css">
+  <script src="./../js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- Header-->
+  <header role="banner">
+    <div class="container">
+      <!-- menu burger -->
+      <section class="d-flex justify-content-around align-items-center">
+        <button id="burger-button" class="btn btn-light">
+          <i class="fas fa-bars h1 text-success"></i>
+        </button>
+        <!-- titre - logo -->
+        <h1 id="logo" aria-label="Logo de Mon arbre généalogique">
+          <a href="./accueil.html" aria-label="Home" class="text-success">
+            Mon arbre généalogique.net <i class="fas fa-tree"></i>
+          </a>
+        </h1>
+        <!-- bouton de recherche -->
+        <button id="search-button" class="btn btn-light">
+          <i class="fas fa-search h3 text-success"></i>
+        </button>
+      </section>
+
+      <!-- Menu principal -->
+      <nav id="menu-de-navigation" class="mt-4 mb-4" role="navigation" aria-label="Menu de navigation principale">
+        <ul class="nav justify-content-around">
+          <li class="placedLinks"><a href="#" class="text-success">Construire son arbre V</a>
+            <!-- Sous-menu -->
+            <ul class="under-menu nav">
+              <li><a href="" class="text-success">Tutos</a></li>
+              <li><a href="" class="text-success">Importer un arbre</a></li>
+              <li><a href="./accueil.html" class="text-success">Saisir une fiche</a></li>
+            </ul>
+          </li>
+          <li class="placedLinks"><a href="" class="text-success">Recherches généalogiques V</a>
+            <!-- Sous-menu -->
+            <ul class="under-menu nav">
+              <li><a href="" class="text-success">Recherches internes</a></li>
+              <li><a href="" class="text-success">Recherches externes</a></li>
+            </ul>
+          </li>
+          <li class="placedLinks"><a href="" class="text-success">Partenaires V</a>
+            <!-- Sous-menu -->
+            <ul class="under-menu nav">
+              <li><a href="" class="text-success">Partenaires institutionnels</a></li>
+              <li><a href="" class="text-success">Partenaires professionels</a></li>
+            </ul>
+          </li>
+          <li class="placedLinks"><a href="./lagenealogie.html" class="text-success">La généalogie ?</a></li>
+          <li><a href="#quisommesnous" class="text-success">L'association/Contact</a></li>
+          <li><a href="./compte.html" class="text-success">Connexion / Création de compte</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Main -->
+  <main role="main" id="contenu-principal" class="mt-5">
+    <div class="container pt-5 mt-5">
+      <!-- Fiche personne -->
+      <fieldset class="border border-success pl-4">
+        <legend class="h2 w-auto">Fiche personne (<strong class="text-danger">* informations obligatoires</strong>)
+        </legend>
+        <article class="ml-2">
+          <a href="">+ parent</a>
+        </article>
+        <article class="text-center">
+          <div class="mt-4">
+            <button class="btn btn-outline-success btn-lg" id="idenButton">Identité *</button>
+          </div>
+          <div class="mt-4">
+            <button class="btn btn-outline-success btn-lg">Naissance</button>
+          </div>
+          <div class="mt-4">
+            <button class="btn btn-outline-success btn-lg">Union</button>
+          </div>
+          <div class="mt-4">
+            <button class="btn btn-outline-success btn-lg">Décès</button>
+          </div>
+        </article>
+        <article class="mr-2 mb-4 text-right">
+          <a href="">+ enfant</a>
+        </article>
+      </fieldset>
+    </div>
+    <!-- Modal de identité -->
+
+    <div class="modal-bg">
+      <div class="container modal-identity d-flex flex-column align-items-center bg-success p-3 rounded text-ligh">
+        <div class="row">
+          <a href="http://" id="backButton">Retour</a>
+        </div>
+        <div class="row">
+          <h2>Saisir une Fiche Identité</h2>
+        </div>
+        <div class="row mt-5 mb-3">
+          <div class="col">
+            <label for="last-name">Nom <strong class="text-danger">*</strong> :</label>
+            <input type="text" name="last-name" id="last-name">
+          </div>
+          <div class="col text-nowrap">
+            <label for="first-name">Prénom <strong class="text-danger">*</strong> :</label>
+            <input type="text" name="first-name" id="first-name">
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col text-nowrap">
+            <button>+ Photo</button>
+          </div>
+          <div class="col">
+            <button>+ Doc</button>
+          </div>
+        </div>
+        <div class="row">
+          <button type="submit">Valider</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container d-flex justify-content-between mt-5">
+      <nav id="menu-info-secondaires" class="mt-4 mb-4" role="navigation" aria-label="Menu de navigation secondaire">
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-success">Crédits</a></li>
+          <li><a href="#" class="text-success">Mentions légales</a></li>
+        </ul>
+      </nav>
+      <section id="quisommesnous">
+        <h3 class="text-success h4">Mon arbre généalogique.net</h3>
+        <p>L'organisation est une association de loi 1901 <br>
+          qui a pour but d'aider les personnes à construire sa généalogie
+        </p>
+      </section>
+      <section>
+        <h3 class="text-success h4">Contact</h3>
+        <p>Rue des Ancêtres <br>
+          81316 VIEUX <br>
+          Tél : 07 01 02 03 04
+        </p>
+      </section>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+/*Parametre du titre */
+#tt {text-align: center;}
+/*Parametre des paragraphes*/
+.p1 { max-width: 65%;
+      float: left;
+      margin-top: 2%;
+    }
+.p2 { max-width: 65%;
+      margin-top: -20%;
+    }
+.p3 { max-width: 65%;
+}
+.p4 { font-size: 24px;
+      font-weight: 700;
+      text-decoration: underline;
+      margin-left: 37%;
+      margin-top: 3%;
+    }
+.p5 { text-align: end;
+      margin-right: 5%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      font-size: 20px;
+    }
+/*Parametre des liens*/
+.a1 { color: #28a745;
+}
+/*Parametre des medias*/
+.img1{ max-width: 34%;
+       margin-top:-2%
+    }
+.vid1 { width:560px ;
+        height: 315px;
+        margin-left: 23%;
+        margin-top: -1%;}

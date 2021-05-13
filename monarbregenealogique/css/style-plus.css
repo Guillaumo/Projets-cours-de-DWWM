@@ -1,0 +1,41 @@
+/* gestion des sous menus */
+.under-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+.under-menu a {
+  display: block;
+}
+nav>ul li:hover .under-menu {
+  display: block !important;
+  
+}
+
+
+.modal-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .2s;
+}
+
+@media screen and (max-width: 991px) {
+  .placedLinks{
+    margin-bottom: 5em;
+  }
+}
