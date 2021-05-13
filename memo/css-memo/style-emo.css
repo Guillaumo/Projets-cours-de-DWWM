@@ -1,0 +1,108 @@
+/* format du header : logo and title*/
+.logo-title{
+  display: table;
+  margin: 0 auto; /* auto permet de centrer */
+  /* text-align: center; */
+}
+.bg-secondary {
+  background-color: #6C757D;
+  color: white;
+  padding: 10px 0;
+}
+/* .logo-title > h1{
+  float: right;
+  margin: 5px 10px;
+} */
+.logo-title > *{
+  float: left;
+  margin: 5px 10px;
+}
+.logo-title h1 {
+  font-size: 2rem;
+}
+/* header format : nav */
+.main-nav {
+  clear: both;
+  list-style: none;
+  display: table;
+  margin: 15px auto;
+}
+.main-nav li {
+  float: left;
+  margin: 0 15px;
+  font-size: 1.5em;
+}
+
+/* main format */
+main{
+  width: 90%;
+  margin: 0 auto;
+}
+main h2{
+  font-size: 1.8rem;
+}
+/* format des colonnes */
+.column{
+  float: left;
+  /*display: inline;*/
+  width: 20%;
+  margin: auto;
+  padding: 5px;
+}
+.column h3 {
+  font-size: 1.6rem;
+  margin: 20px 0 10px 0;
+}
+.plus{
+  background-color: green;
+}
+/* format cartes */
+.card{
+  background-color:#6c757d;
+  color: white;
+  margin: 20px 0 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+.card p{
+  font-size: 1.4rem;
+  margin: 15px 0 10px 0;
+}
+.parameter-button{
+  border: #6c757d;
+  background-color: #6c757d;
+}
+.parameter-button img{
+  display: inline;
+  width: 20px;
+  height: 20px;
+  background-color:#6c757d ;
+}
+.answer-button{
+  background-color: #ffc107;
+}
+/* footer format */
+footer{
+  clear: both;
+}
+.footer-nav{
+  display: table;
+  margin: 0 auto;
+}
+/* Media Queries */
+/* Quand l'écran est plus petit, mettre les colles de cartes en pleine largeur, les unes en-dessous des autres */
+@media screen and (max-width: 767px) {
+
+  .column{
+    /* float:none; */
+    width:auto;
+    margin: auto;
+    text-align: center;
+  }
+  .tab{
+    /* overflow: visible; */
+    width:400vw;
+    overflow-x: scroll;
+  }
+ 
+}
